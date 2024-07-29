@@ -2,16 +2,16 @@
   {
     "productID": 4321,
     "ProductName": "Iphone15pro",
-    "Price": 75450.55
+    "Price": 75450.5
   },
   {
     "productID": 3242,
     "ProductName": "Oneplus12Rpro",
-    "Price": 65450.55
+    "Price": 65450.5
   },
   {
     "productID": 3421,
-    "ProductName": "SamsungFlippro",
-    "Price": 85450.55
+    "ProductName": "SamsungFlippro15",
+    "Price": 85450.5
   }
 ]
