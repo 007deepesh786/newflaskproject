@@ -42,10 +42,10 @@ stages {
             steps {
                 script{
                 if(isUnix()){
-                sh "docker build -t kpradeep/newflaskapp ."
+                sh "docker build -t deepesh0786/newflaskapp:latest ."
                 }
                 else{
-                 bat "docker build -t kpradeep/newflaskapp ."
+                 bat "docker build -t deepesh0786/newflaskapp:latest ."
                  }
                  }
 
@@ -56,7 +56,7 @@ stages {
             steps {
                withCredentials([usernamePassword(credentialsId:'dockerHub',passwordVariable: 'dockerHubPassword',usernameVariable:'dockerHubUser')]){
                 bat "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-                bat "docker push kpradeep/newflaskapp:latest"
+                bat "docker push deepesh0786/newflaskapp:latest"
                 }
 
 

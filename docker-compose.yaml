@@ -1,7 +1,7 @@
 services:
   python-app:
     platform: linux/amd64
-    image: deepesh0786/python-app-new:2.0
+    image: deepesh0786/newflaskapp:latest
     build:
       context: .
     ports:
