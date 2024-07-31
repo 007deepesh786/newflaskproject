@@ -2,7 +2,7 @@ pipeline {
 agent any
 
 stages {
-stage('Build') {
+stage('Docker Build') {
 steps {
 // Get some code from a GitHub repository
 git url: 'https://github.com/007deepesh786/newflaskproject.git'
@@ -10,10 +10,10 @@ git url: 'https://github.com/007deepesh786/newflaskproject.git'
 // Run Maven on a Unix agent.
 script{
 if(isUnix()){
-sh "pip3 install -r requirements.txt"
+sh "Docker build -t deepesh0786/newflaskapp"
 }
 else{
-bat "pip install -r requirements.txt"
+bat "Docker build -t deepesh0786/newflaskapp"
 }
 }
 }
